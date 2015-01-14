@@ -18,6 +18,9 @@
 </ul>
 </div>
 </div>
+<div id="content">
+This is content
+</div>
 <?php
  echo "Hello World!";
 ?>
