@@ -6,7 +6,11 @@
  * This lab focuses on your understanding of arithmatic.
  *
  * @version 1.0
+<<<<<<< HEAD
  * @author Ryan Bates <rbates@vtc.edu>
+=======
+ * @author YOUR_NAME <YOUR_EMAIL_ADDRESS@vtc.edu>
+>>>>>>> upstream/master
  * @since 20150120
  */
 
