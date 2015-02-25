@@ -38,7 +38,7 @@ $form_layout = <<< EOD
 <p>
 <form method="post" action="">
 <label name="truncateFloat">Floating Point Value</label><input type="text" name="truncateFloat"><br>
-<label name="farenheit2Kelvin">Farenheit Value</label><input type="text" name="farenheight2Kelvin"><br>
+<label name="farenheit2Kelvin">Farenheit Value</label><input type="text" name="farenheit2Kelvin"><br>
 <label name="dodecahedronVolume">Dodecahedron Side Value</label><input type="text" name="dodecahedronVolume"><br>
 <label name="impactVelocity">Impact Velocity</label><input type="text" name="impactVelocity"><br>
 <input type="submit" value="submit" name="submit">
@@ -48,7 +48,7 @@ EOD;
 function truncateFloat($float_value)
 {
 	$truncate = (int)($float_value*100)/100;
-	echo $truncate;
+	return $truncate;
 }
 
 /**
@@ -57,7 +57,7 @@ function truncateFloat($float_value)
 function farenheit2Kelvin($degrees_f)
 {
 	$degrees_k = ($degrees_f - 32) * 5/9 + 273.15;
-	echo $degrees_k;
+	return $degrees_k;
 }
 
 /**
@@ -66,7 +66,7 @@ function farenheit2Kelvin($degrees_f)
 function dodecahedronVolume($area)
 {
 	$volume = ((15 + 7*sqrt(5)) / 4)*pow($area,3);
-	echo $volume;
+	return $volume;
 }
 
 /**
@@ -75,17 +75,17 @@ function dodecahedronVolume($area)
 function impactVelocity($height)
 {
 	$velocity = sqrt(2*GRAVITY*$height);
-	echo $velocity;
+	return $velocity;
 }
 
-if (isset($_POST('submit'))) {
+if (isset($_POST['submit'])) {
 	$truncateFloatResult = truncateFloat($_POST["truncateFloat"]);
-	$farenheight2KelvinResult = fahrenheit2Kelvin($_POST["farenheit2Kelvin"]);
+	$farenheit2KelvinResult = farenheit2Kelvin($_POST["farenheit2Kelvin"]);
 	$dodecahedronVolumeResult = dodecahedronVolume($_POST["dodecahedronVolume"]);
 	$impactVelocityResult = impactVelocity($_POST["impactVelocity"]);
 } else {
 	$truncateFloatResults = "";
-	$farenheight2KelvinResults = "";
+	$farenheit2KelvinResults = "";
 	$dodecahedronVolumeResults = "";
 	$impactVelocityResults = "";
 }
@@ -93,18 +93,18 @@ if (isset($_POST('submit'))) {
 if (!isset($_POST['submit'])) {
 	echo $form_layout;
 } else {
-	$forum_results = $header;
-	if (!empty($truncateFloatReult)) {
+	$form_results = $header;
+	if (!empty($truncateFloatResult)) {
 		$form_results .= "The truncate floating point value is: " . $truncateFloatResult . ".<br>";
 	}
-	if (!empty($farenheight2KelvinResult)) {
-		$form_results .= "The kelvin value is: " . $farenheight2KelvinResult . ".<br>";
+	if (!empty($farenheit2KelvinResult)) {
+		$form_results .= "The kelvin value is: " . $farenheit2KelvinResult . ".<br>";
 	}
 	if (!empty($dodecahedronVolumeResult)) {
 		$form_results .= "The dodecahedron value value is: " . $dodecahedronVolumeResult . ".<br>";
 	}
 	if (!empty($impactVelocityResult)) {
-		$forum_results .= "The splat value is: " . $impactVelocityResult . ".<br>";
+		$form_results .= "The splat value is: " . $impactVelocityResult . ".<br>";
 	}
 	$form_results .= $footer;
 	
