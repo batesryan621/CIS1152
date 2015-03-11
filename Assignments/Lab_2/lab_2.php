@@ -56,10 +56,18 @@ function impactVelocity($height)
 $velocity = sqrt(2*GRAVITY*$height);
 echo $velocity;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a
 truncateFloat(30.1231231231);
 echo "<br>";
 farenheit2Kelvin(30);
 echo "<br>";
 dodecahedronVolume(10);
 echo "<br>";
+<<<<<<< HEAD
 impactVelocity(50);
+=======
+impactVelocity(50);
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a

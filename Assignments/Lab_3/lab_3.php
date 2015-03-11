@@ -6,6 +6,10 @@ function tempWarning($temp_in_c)
 {
     // Use an if else statement
     // Output the following text if the temp_in_c is above 32 degrees centigrade.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a
 	if ($temp_in_c > 32) {
 		echo "It's really hot out there, be careful!";
 	} elseif ($temp_in_c < 7) {
@@ -23,6 +27,10 @@ function quadraticEquation($a, $b, $c)
     // Use and if else statement
     $discrim = $b * $b - 4 * $a * $c;
     //if the discrim is less than zero echo the following
+<<<<<<< HEAD
+=======
+
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a
 	if ($discrim < 0) {
     echo "The equation has no real roots!";
 	} elseif ($discrim == 0) {
@@ -31,6 +39,10 @@ function quadraticEquation($a, $b, $c)
     echo "There is a double root at " . $root;
 	} elseif ($discrim > 0){
     // if the discrim is greater than zero do the following
+<<<<<<< HEAD
+=======
+
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a
 		$discRoot = sqrt($b * $b - 4 * $a * $c);
 		$root1    = (-$b + $discRoot) / (2 * $a);
 		$root2    = (-$b - $discRoot) / (2 * $a);
@@ -52,6 +64,10 @@ function quadraticEquation($a, $b, $c)
 function consinantOrVowel($letter)
 {
     // Use a switch statement here
+<<<<<<< HEAD
+=======
+
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a
 	switch($letter){
 		
 	case "a":
@@ -125,4 +141,8 @@ quadraticEquation(3, 15, 27);
 echo "<br>";
 consinantOrVowel("e");
 echo "<br>";
+<<<<<<< HEAD
 indefiniteFactorialLoop(50);
+=======
+indefiniteFactorialLoop(50);
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a

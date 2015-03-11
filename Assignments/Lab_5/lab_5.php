@@ -27,6 +27,10 @@
  */
 define('GRAVITY', 9.8);
 <<<<<<< HEAD
+=======
+
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a
+<<<<<<< HEAD
 $header = <<< EOD
 <html>
 <head>
@@ -34,10 +38,18 @@ $header = <<< EOD
 </head>
 <body>
 EOD;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a
 $footer = <<< EOD
 </body>
 </html>
 EOD;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a
 $form_layout = <<< EOD
 <p>
 <form method="post" action="">
@@ -48,6 +60,10 @@ $form_layout = <<< EOD
 <input type="submit" value="submit" name="submit">
 </form>
 EOD;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a
 function truncateFloat($float_value)
 {
 	$truncate = (int)($float_value*100)/100;
@@ -91,6 +107,10 @@ function impactVelocity($height)
 	$velocity = sqrt(2*GRAVITY*$height);
 	return $velocity;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a
 if (isset($_POST['submit'])) {
 	$truncateFloatResult = truncateFloat($_POST["truncateFloat"]);
 	$farenheit2KelvinResult = farenheit2Kelvin($_POST["farenheit2Kelvin"]);
@@ -102,6 +122,10 @@ if (isset($_POST['submit'])) {
 	$dodecahedronVolumeResults = "";
 	$impactVelocityResults = "";
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a
 if (!isset($_POST['submit'])) {
 	echo $form_layout;
 } else {
@@ -122,13 +146,23 @@ if (!isset($_POST['submit'])) {
 	
 	echo $form_results;
 }
+<<<<<<< HEAD
 ?>
+=======
+
+?>
+
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a
 <!DOCTYPE html>
 <html>
 <head>
     <title>Class 4 Lab</title>
 </head>
 <body>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a
 </body>
 </html>
 =======
@@ -191,4 +225,8 @@ if (!isset($_POST['submit'])) {
 ?>
 </body>
 </html>
+<<<<<<< HEAD
 >>>>>>> upstream/master
+=======
+>>>>>>> upstream/master
+>>>>>>> 92a4458807f564be632d133b55f7e03d0fe9545a

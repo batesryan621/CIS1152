@@ -6,7 +6,7 @@
 <meta name="keywords" content="Ryan,Bates,Site,Random">
 <meta name="author" content="Ryan Bates">
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="css\styles.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
@@ -18,11 +18,12 @@
 </ul>
 </div>
 </div>
-<div class="center" id="content">
+<div id="content">
+This is content
+</div>
 <?php
  echo "Hello World!";
 ?>
-</div>
 <div id="footer">
 Bates copyright &copy; 2014 Ryan Bates - 
 <a href="mailto:ryan@notarealsite.com">ryan@notarealsite.com</a>
