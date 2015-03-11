@@ -6,7 +6,7 @@
  * This lab focuses on your understanding of arithmatic.
  *
  * @version 1.0
- * @author YOUR_NAME <YOUR_EMAIL_ADDRESS@vtc.edu>
+ * @author RYAN BATES <rbates@vtc.edu>
  * @since 20150120
  */
 
@@ -25,7 +25,6 @@ class MathFun
 {
 
     const GRAVITY = 9.8;
-
 
     function truncateFloat($float_value)
     {
@@ -53,6 +52,6 @@ class MathFun
      */
     function impactVelocity($height)
     {
-        return sqrt(2 * GRAVITY * $height);
+        return sqrt(2 * self::GRAVITY * $height);
     }
 }

@@ -6,7 +6,7 @@
  * This lab focuses on your understanding of arithmatic.
  *
  * @version 1.0
- * @author YOUR_NAME <YOUR_EMAIL_ADDRESS@vtc.edu>
+ * @author RYAN BATES <rbates@vtc.edu>
  * @since 20150303
  */
 
@@ -18,11 +18,15 @@
  *
  * @param $float_value
  */
-
+ 
 namespace VTC\Lab_5\PageLayout;
 
+require_once "src/math_fun.php";
+use VTC\Lab_5\MathFun as MathFun;
+
 class PageLayout
-{
+{	
+
 
     public static $header = "<html>\n\t<head>\n\t\t<title>Simple PHP Form Example</title>\n\t</head>\n\t<body>";
     public static $footer = "\n\t</body>\n</html>";
@@ -38,4 +42,18 @@ class PageLayout
 </p>
 EOD;
 
+public static function displayResults() {
+		if (!empty($_POST["truncateFloat"])) {
+			echo "The truncated floating point value is: " . MathFun\MathFun::truncateFloat($_POST["truncateFloat"]) . ".<br>";
+		}
+		if (!empty($_POST["farenheit2Kelvin"])) {
+			echo "The Kelvin value is: " . MathFun\MathFun::farenheit2Kelvin($_POST["farenheit2Kelvin"]) . ".<br>";
+		}
+		if (!empty($_POST["dodecahedronVolume"])) {
+			echo "The dodecahedron volume value is: " . MathFun\MathFun::dodecahedronVolume($_POST["dodecahedronVolume"]) . ".<br>";
+		}
+		if (!empty($_POST["impactVelocity"])) {
+			echo "The splat value is: " . MathFun\MathFun::impactVelocity($_POST["impactVelocity"]) . ".<br>";
+		}
+	}
 }
