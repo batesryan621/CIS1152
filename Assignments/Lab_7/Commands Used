@@ -1,0 +1,33 @@
+RYAN BATES - ADVANCED WEBSITE DEVELOPMENT - LAB 9
+
+Commands used to add myself to the database-
+
+1: SHOW tables;
+2: DESCRIBE employees;
+3: INSERT INTO employees (emp_no, birth_date, first_name, last_name, gender, hire_date) VALUES (500000, "1996-06-21", "Ryan", "Bates", "M", NOW());
+4: SHOW tables;
+5: DESCRIBE departments;
+6: SELECT * FROM departments; -d005
+7: DESCRIBE dept_emp;
+8: INSERT INTO dept_emp (emp_no, dept_no, from_date, to_date) VALUES (500000, "d005", NOW(), "9999-01-01");
+9: SHOW tables;
+10: DESCRIBE salaries;
+11: INSERT INTO salaries (emp_no, salary, from_date, to_date) VALUES (500000, 2147483647, NOW(), "9999-01-01");
+12: SHOW tables;
+13: DESCRIBE titles;
+14: INSERT INTO titles (emp_no, title, from_date, to_date) VALUES (500000, "Senior Bacon Slayer", NOW(), "9999-01-01");
+
+Checked if I was added correctly to employees:
+SELECT * FROM employees WHERE emp_no=500000;
+
+Checked if I was added correctly to dept_emp:
+SELECT * FROM dept_emp WHERE emp_no=500000;
+
+Checked if I was added correctly to salaries:
+SELECT * FROM salaries WHERE emp_no=500000;
+
+Checked if I was added correctly to titles:
+SELECT * FROM titles WHERE emp_no=500000;
+
+
+PS. I completed this first time using SQL and XAMP in linux (new to linux) (what a blast that was) +10 bacons earned 
