@@ -31,7 +31,7 @@ $conn = new mysqli($DBServer,$DBUser,$DBPass,$DBName);
 if($conn->connect_error){
 	die('Error: ' . $conn->connect_errorno);
 }
-$result = $conn->query("SELECT name, email, comment, comment_timestamp from guestbook;");
+$result = $conn->query("SELECT name, email, comment, comment_timestamp FROM guestbook;");
 if(isset($_POST['submit'])){
 	$name = "'" . $conn->real_escape_string($_POST['name']) . "'";
 	$email = "'" . $conn->real_escape_string($_POST['email']) . "'";
